@@ -1,0 +1,243 @@
+body {
+    /* margin: 0; Remove default margin */
+    /* padding-top: 70px; Ensure content is below the fixed nav bar */
+    font-family: serif;
+    background-color: #ff880052;
+}
+
+nav {
+    border-radius: 15px;
+    /* margin-top: 10px; */
+    padding: 20px;
+    background-color: rgb(106, 106, 235);
+    font-family: serif;
+    box-shadow: 3px 3px 8px goldenrod;
+    /* position: fixed; */
+    width: 97%;
+    /* Use 100% width for full-width nav */
+    /* top: 0; Position at the top */
+}
+
+.navbar {
+    border-radius: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+    /* margin: 0; /* Remove default margin */
+}
+
+*/ .navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ff8800;
+}
+
+/* Add styles for the content below the nav bar */
+.content {
+    margin-top: 90px;
+    /* Adjust this value as needed */
+    padding: 20px;
+}
+
+.main-div {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box {
+    width: 400px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px blue;
+}
+
+.box h1 {
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.box .inputbox {
+    position: relative;
+    padding: auto;
+}
+
+.box .inputbox input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+}
+
+.box .inputbox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.box .inputbox input:focus+label {
+    transform: translateY(-20px);
+    font-size: 12px;
+    color: #03a9f4;
+}
+
+.box input[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.box .inputbox input:focus~label,
+.box .inputbox input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+}
+
+.featured-projects {
+    padding: 50px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.project {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* ... Your existing CSS code ... */
+/* Featured Projects Section */
+.featured-projects {
+    /* ... Your existing styles ... */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.project {
+    /* ... Your existing styles ... */
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    cursor: pointer;
+    box-shadow: 3px 3px 9px gold;
+}
+
+.project h3 {
+    /* ... Your existing styles ... */
+    margin-bottom: 10px;
+}
+
+.project p {
+    /* ... Your existing styles ... */
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: #e0f2f1;
+    /* Add your desired background color here */
+}
+
+.project.project1 {
+    background-color: #d6d0cb;
+    /* Change to your preferred color */
+}
+
+.project.project2 {
+    background-color: #c5e1a5;
+    /* Change to your preferred color */
+}
+
+/* ... Your existing CSS code ... */
+/* About Me Section */
+.about-me {
+    margin: 70px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.about-me h2 {
+    /* ... Your existing styles ... */
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    /* ... Your existing styles ... */
+}
+
+.about-me:hover {
+    background-color: #a484eb;
+}
+
+#login {
+    text-align: center;
+}
+
+.linkedin {
+    margin-left: 400px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    cursor: pointer;
+    box-shadow: 3px 3px 9px gold;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.linkedin:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: #e0f2f1;
+}
